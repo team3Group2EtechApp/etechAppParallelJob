@@ -18,6 +18,13 @@ pipeline{
             sh 'bash -x /var/lib/jenkins/workspace/etechAppParallelJob/abisola.sh'
           }
         }
+        stage('2nd parallel job'){
+      	parallel{
+        stage('Anthony-actions'){
+          steps{
+            sh 'bash -x /var/lib/jenkins/workspace/etechAppParallelJob/anthony.sh'
+          }
+        }
 	}
 }
 }
