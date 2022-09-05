@@ -25,6 +25,11 @@ pipeline{
             sh 'bash -x /var/lib/jenkins/workspace/etechAppParallelJob/anthony.sh'
           }
         }
+       stage('Judith-actions'){
+          steps{
+            sh 'bash -x /var/lib/jenkins/workspace/etechAppParallelJob/judith.sh'
+          }
+        } 
 	}
 }
 }
