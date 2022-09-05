@@ -13,6 +13,11 @@ pipeline{
             sh 'bash -x /var/lib/jenkins/workspace/etechAppParallelJob/phil.sh'
           }
         }
+        stage('abisola'){
+          steps{
+            sh 'bash -x /var/lib/jenkins/workspace/etechAppParallelJob/abisola.sh'
+          }
+        }
 	}
 }
 }
