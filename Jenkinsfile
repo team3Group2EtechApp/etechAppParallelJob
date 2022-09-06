@@ -35,8 +35,12 @@ pipeline{
             sh 'bash -x /var/lib/jenkins/workspace/etechAppParallelJob/monic.sh'
           }
         }
-          
-	}
+        stage('engineer-felix'){
+          steps{
+            sh 'bash -x /var/lib/jenkins/workspace/etechAppParallelJob/felix.sh'
+          }
+        }
+        }
 }
 }
 }
