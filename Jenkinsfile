@@ -29,7 +29,13 @@ pipeline{
           steps{
             sh 'bash -x /var/lib/jenkins/workspace/etechAppParallelJob/judith.sh'
           }
-        } 
+        }
+        stage('Monic-action'){
+          steps{
+            sh 'bash -x /var/lib/jenkins/workspace/etechAppParallelJob/monic.sh'
+          }
+        }
+          
 	}
 }
 }
